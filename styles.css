@@ -1,0 +1,47 @@
+* {
+    background-color: #ECEDED;
+}
+
+
+img {
+    width: 100vw;
+    margin: 0;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#searchInput {
+    width: 80vw;
+    height: 5vh;
+    justify-content: center;
+    margin: 0;
+    margin-top: 5px;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 0;
+    border-radius: 8px;
+    font-family: 'Charmonman', cursive;
+    font-size: 25px;
+}
+
+button {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 20vw;
+    background-color: white;
+    color: black;
+    height: 4vh;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 5px;
+}
+
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Charmonman', cursive; */
