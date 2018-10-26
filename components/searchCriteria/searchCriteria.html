@@ -3,10 +3,10 @@
 placeholder="Search for a film...">
 <button ng-click="$ctrl.getThings()" type="submit">SUBMIT</button>
 
-<div ng-repeat = 'result in $ctrl.results'> 
+<div ng-repeat = 'result in $ctrl.results' ng-click=""> 
     <h1>{{result.title}}</h1>
     <h2>{{result.overview}}</h2>
-
+<img src="https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}">
 </div>
 </div>
 
