@@ -8,8 +8,7 @@
                     .then(function(response){
 
                         console.log(response)
-                            $http.title = response.data.results[0].title;
-                            console.log($http.title)
+                            $ctrl.results = response.data.results;
                     });
                 }
             
