@@ -3,6 +3,9 @@
 placeholder="Search for a film...">
 <button ng-click="$ctrl.getThings()" type="submit">SUBMIT</button>
 
-<p ng-repeat = 'result in $ctrl.results'> {{result.title}}</p>
+<div ng-repeat = 'result in $ctrl.results'> 
+    <p></p>{{result.title}}
+
+</div>
 </div>
 
