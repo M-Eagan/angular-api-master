@@ -1,15 +1,15 @@
 "use strict"; {
     angular.module('app')
-        .controller('movieListController', function () {
+        .controller('movieListController', function ($http) {
             const $ctrl = this;
             $ctrl.getThings = function () {
-                return $http.get("https://api.themoviedb.org/3/search/movie?api_key=4f4565d06d2dff19a79a1c507b52ff3d&query=" + $ctrl.searchInput + "&page=1")
+                return $http.get("https://api.themoviedb.org/3/movie/now_playing?api_key=4f4565d06d2dff19a79a1c507b52ff3d&language=en-US&page=1")
                     .then(function(response){
 
                         console.log(response)
-                            $http.title = response.data.results[0].title;
-                            console.log($http.title)
+                           $ctrl.newReleases = response.data.results;
                     });
                 }
+                $ctrl.getThings();
             })
         }
