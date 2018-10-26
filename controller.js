@@ -6,7 +6,7 @@
 //     }
 
 
-app.controller("movieSearch", function($scope, $http) {
+// app.controller("movieSearch", function($scope, $http) {
  
     // var pendingTask;
     
@@ -31,6 +31,6 @@ app.controller("movieSearch", function($scope, $http) {
     //     console.log(responseData);
     //     });
 
-});
+// });
 
 
