@@ -1,6 +1,6 @@
 "use strict"; {
     angular.module('app')
-        .controller('searchCriteriaController', function ($http) {
+        .controller('searchCriteriaController', function ($http, $scope) {
             const $ctrl = this;
 
             $ctrl.getThings = function () {
@@ -11,6 +11,9 @@
                             $ctrl.results = response.data.results;
                     });
                 }
+            //     $scope.clicked = function(){
+            //         $location.path = "#/favorite.html";
+            //   }
             
 
         

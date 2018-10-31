@@ -42,6 +42,9 @@ button {
     margin: 5px;
 }
 
+#watchlist {
+    font-size: 10px;
+}
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Charmonman', cursive; */

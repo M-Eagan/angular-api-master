@@ -3,6 +3,9 @@
     .config(function($routeProvider){
         $routeProvider
             .when('/',{
+                template:'<search-Criteria></search-Criteria>'
+            })
+            .when('/newrelease', {
                 template:'<movie-List></movie-List>'
             })
             .when('/favorite',{
